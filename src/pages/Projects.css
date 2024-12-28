@@ -1,0 +1,18 @@
+.projects {
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .project {
+    background: #444;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
