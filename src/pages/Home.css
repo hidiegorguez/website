@@ -1,12 +1,25 @@
 .home {
-    text-align: center;
-    padding: 2rem;
-    background-color: #444;
-    color: #fff;
-  }
-  
-  .home h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

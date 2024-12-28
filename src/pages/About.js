@@ -1,5 +1,3 @@
-// About Component
-// Ruta: src/pages/About.js
 import React from 'react';
 import './About.css';
 

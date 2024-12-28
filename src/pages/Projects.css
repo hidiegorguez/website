@@ -1,18 +1,64 @@
 .projects {
-    padding: 2rem;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  
-  .project {
-    background: #444;
-    padding: 1rem;
-    border-radius: 5px;
-  }
-  
+  padding: 2rem;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: all 0.3s ease; /* Suavidad para cambios */
+  text-align: center; /* Texto centrado */
+}
+
+.project:hover {
+  background-color: #f0f0ff; /* Cambia de color al pasar el ratón */
+  transform: translateY(-5px); /* Efecto sutil de elevación */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #4ca2ff; /* Color del enlace */
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 8px rgba(0, 123, 255, 0.4); /* Sombra visible */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.project-link:hover {
+  color: #0056b3;
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.6);
+}
+
+.project img {
+  max-width: 60%; /* Asegura que no exceda el tamaño del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 80px; /* Limita la altura máxima */
+  object-fit: contain; /* Ajusta la imagen dentro del espacio disponible */
+  border-radius: 10px; /* Bordes redondeados si lo deseas */
+}

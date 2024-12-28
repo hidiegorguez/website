@@ -7,7 +7,7 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 
 function App() {
-  const [language, setLanguage] = useState('es'); // Idioma predeterminado: Español
+  const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === 'es' ? 'en' : 'es'));
@@ -18,8 +18,8 @@ function App() {
       <Header toggleLanguage={toggleLanguage} language={language} />
       <main>
         <Home language={language} />
-        <Projects language={language} />
         <About language={language} />
+        <Projects language={language} />
       </main>
       <Footer language={language} />
     </div>
