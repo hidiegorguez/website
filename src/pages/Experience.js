@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './../styles/shared-sections.css';
 
 const Experience = ({ language }) => {
   const [expandedIndex, setExpandedIndex] = useState(null);

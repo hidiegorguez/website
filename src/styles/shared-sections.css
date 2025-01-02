@@ -1,0 +1,83 @@
+/* shared-sections.css */
+/* Estilos compartidos para las secciones de Projects, Experience y Education */
+
+/* Contenedor principal */
+.shared-section {
+    display: grid; /* Diseña las celdas en formato cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste adaptable */
+    gap: 1.5rem; /* Espaciado entre celdas */
+    justify-content: center; /* Centrado horizontal */
+    padding: 2rem; /* Espaciado interno */
+  }
+  
+  /* Tarjetas individuales */
+  .shared-item {
+    background-color: #fff; /* Fondo blanco */
+    border: 2px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Centrado del texto */
+    cursor: pointer; /* Interactivo */
+    transition: all 0.3s ease; /* Suavidad en los cambios */
+    position: relative; /* Necesario para la posición de la fecha */
+    display: flex;
+    flex-direction: column; /* Coloca elementos en columna */
+    justify-content: flex-start;
+  }
+  
+  /* Imagen de la tarjeta */
+  .shared-item img {
+    max-width: 80%; /* Imagen contenida */
+    max-height: 100px; /* Limita la altura máxima */
+    object-fit: contain; /* Ajuste proporcional */
+    padding: 10% 0; /* Espaciado interno vertical */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0 auto; /* Centrado horizontal */
+  }
+  
+  /* Fecha */
+  .shared-item .date {
+    font-style: italic; /* Texto en cursiva */
+    color: #999; /* Color gris claro */
+    margin-top: auto; /* Empuja la fecha al fondo */
+    position: absolute; /* Posición absoluta */
+    bottom: 1rem; /* Distancia desde el fondo */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Ajuste del centrado */
+  }
+  
+  /* Hover de la tarjeta */
+  .shared-item:hover {
+    background-color: #f0f0ff; /* Fondo azul claro */
+    transform: translateY(-5px); /* Eleva la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  }
+  
+  /* Títulos */
+  .shared-item h3 {
+    font-size: 1.5rem; /* Tamaño del título */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+  }
+  
+  /* Organización o institución */
+  .organization, .institution {
+    font-weight: bold; /* Negrita */
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+  }
+  
+  /* Enlace */
+  .website-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007bff; /* Azul */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    transition: all 0.3s ease; /* Suavidad */
+  }
+  
+  .website-link:hover {
+    color: #0056b3; /* Azul más oscuro */
+  }
+  

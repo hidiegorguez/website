@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-// import './Projects.css';
-import './../App.css';
+import './../styles/shared-sections.css';
 
 
 const Projects = ({ language }) => {
