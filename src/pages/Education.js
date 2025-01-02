@@ -26,12 +26,14 @@ const Education = ({ language }) => {
       link: 'https://www.ucm.es/',
     },
     {
-      title: language === 'es' ? 'Bachillerato en Ciencias y Tecnología' : 'High School Diploma in Science and Technology',
+      title: language === 'es' ? 'Bachillerato' : 'High School Diploma',
       institution: 'IES Gregorio Peces - Barba',
       date: 'Sep 2016 - Jun 2018',
       shortDescription: process.env.PUBLIC_URL + '/images/IESGPB.png',
-      fullDescription: '',
-      link: '#',
+      fullDescription: language === 'es'
+        ? 'ciencias y tecnología'
+        : 'science and technology',
+      link: 'https://www.educa2.madrid.org/web/ies.gpb',
     },
   ];
 
@@ -64,7 +66,7 @@ const Education = ({ language }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {language === 'es' ? 'Ver más' : 'Learn More'}
+                  {language === 'es' ? 'Ver más' : 'View More'}
                 </a>
               </>
             )}

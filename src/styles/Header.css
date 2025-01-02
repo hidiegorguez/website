@@ -10,18 +10,59 @@
 }
 
 .icon-container {
-  display: flex; /* Muestra los iconos en fila */
-  gap: 1.5rem; /* Espaciado entre iconos */
+  display: flex;
+  gap: 2rem; /* Espaciado entre los iconos */
   justify-content: center; /* Centra los iconos horizontalmente */
-  align-items: center; /* Centra los iconos verticalmente */
-  margin-bottom: 1rem; /* Margen inferior para separación del botón */
+  align-items: center; /* Alinea los iconos verticalmente */
+  margin: 1rem 0; /* Margen superior e inferior */
 }
 
 .header-icon {
-  width: 40px; /* Tamaño de los iconos */
+  width: 40px;
   height: 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gmail-icon-container {
+  position: relative; /* Necesario para el popup */
+  display: inline-block;
   cursor: pointer;
+}
+
+.email-popup {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  top: 50px; /* Ajusta según el tamaño del icono */
+  left: 50%;
+  transform: translate(-115%, -80%);
+  background-color: #ffffff;
+  color: #333;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 10;
+}
+
+.email-popup p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.email-popup button {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #929292;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-popup button:hover {
+  background-color: #494949;
 }
 
 .header-icon:hover {

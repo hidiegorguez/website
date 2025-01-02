@@ -13,7 +13,7 @@ const Experience = ({ language }) => {
       fullDescription: language === 'es'
         ? 'Optimización de campañas publicitarias en Google Ads y plataformas programáticas utilizando tecnologías de Microsoft (Azure, Databricks).'
         : 'Optimization of advertising campaigns on Google Ads and programmatic platforms using Microsoft technologies (Azure, Databricks).',
-      link: 'https://www.publicisgroupe.com/',
+        link: 'https://www.publicisgroupe.com/fr/splash',
     },
     {
       title: language === 'es' ? 'Analista de Datos' : 'Data Analyst',
@@ -23,7 +23,7 @@ const Experience = ({ language }) => {
       fullDescription: language === 'es'
         ? 'Obtención y análisis de operaciones de clientes para crear informes de carteras utilizando Excel y Power BI.'
         : 'Acquisition and analysis of client transactions to create portfolio reports using Excel and Power BI.',
-      link: '#',
+      link: 'https://www.arentia.com/nuestros-negocios/arentia-seguros/',
     },
     {
       title: language === 'es' ? 'Becario en Transformación Digital' : 'Intern in Digital Transformation',
@@ -33,7 +33,7 @@ const Experience = ({ language }) => {
       fullDescription: language === 'es'
         ? 'Colaboración en proyectos de implementación de Blockchain y Deep Learning, enfocados en clasificación de imágenes y procesamiento de lenguaje natural.'
         : 'Collaboration in Blockchain and Deep Learning implementation projects focused on image classification and natural language processing.',
-      link: '#',
+      link: 'https://www.euipo.europa.eu/en',
     },
   ];
 
@@ -66,7 +66,7 @@ const Experience = ({ language }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {language === 'es' ? 'Ver más' : 'Learn More'}
+                  {language === 'es' ? 'Ver más' : 'View More'}
                 </a>
               </>
             )}
