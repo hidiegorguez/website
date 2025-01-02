@@ -1,10 +1,9 @@
+/* Sección Home (Elimina cualquier fondo azul) */
 .home {
-  background-color: #f4f4f9;
-  color: #333;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Fondo blanco */
+  color: #333; /* Texto en color oscuro */
+  padding: 2rem; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
 }
 
 .home h2 {

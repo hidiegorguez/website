@@ -1,9 +1,8 @@
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #f1f1f1;
+  color: #242424;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
 }
 
 .footer ul {
@@ -15,7 +14,7 @@
 }
 
 .footer ul li a {
-  color: #f0f0ff;
+  color: #222222;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem;

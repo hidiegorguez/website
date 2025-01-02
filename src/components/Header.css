@@ -1,74 +1,48 @@
 .header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+  background-color: #686868; /* Fondo del header */
+  color: #fff; /* Color del texto */
+  padding: 1rem; /* Espaciado interno */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  text-align: center; /* Asegura que el contenido esté centrado */
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.icon-container {
+  display: flex; /* Muestra los iconos en fila */
+  gap: 1.5rem; /* Espaciado entre iconos */
+  justify-content: center; /* Centra los iconos horizontalmente */
+  align-items: center; /* Centra los iconos verticalmente */
+  margin-bottom: 1rem; /* Margen inferior para separación del botón */
 }
 
-.header h1 {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.header nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.language-toggle-container {
-  position: relative;
-}
-
-.language-toggle {
-  background-color: #979797;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
+.header-icon {
+  width: 40px; /* Tamaño de los iconos */
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
 }
 
-.language-toggle:hover {
-  background-color: #828640;
-  transform: translateY(-4px);
+.header-icon:hover {
+  transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el ratón */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Añade una sombra */
 }
 
-.language-toggle span.tooltip {
-  visibility: hidden;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 0.5rem;
-  position: absolute;
-  bottom: -2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.8rem;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  z-index: 1;
+.language-button {
+  padding: 0.5rem 1rem; /* Tamaño del botón */
+  font-size: 1rem; /* Tamaño de fuente */
+  font-weight: bold; /* Fuente en negrita */
+  background-color: #363636; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animación suave */
 }
 
-.language-toggle:hover span.tooltip {
-  visibility: visible;
-  opacity: 1;
+.language-button:hover {
+  background-color: #cacaca; /* Color de hover */
+  color: #333333; /* Color del texto */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
 }
