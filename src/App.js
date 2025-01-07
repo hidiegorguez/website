@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
+import Certifications from './pages/Certifications';
 
 function App() {
   const [activeSection, setActiveSection] = useState('experience');
@@ -23,6 +24,8 @@ function App() {
         return <Projects language={language} />;
       case 'education':
         return <Education language={language} />;
+      case 'certifications':
+        return <Certifications language={language} />;
       default:
         return <Experience language={language} />;
     }
@@ -55,6 +58,12 @@ function App() {
                 onClick={() => setActiveSection('education')}
               >
                 {language === 'en' ? 'Education' : 'Educación'}
+              </button>
+              <button
+                className={activeSection === 'certifications' ? 'active' : ''}
+                onClick={() => setActiveSection('certifications')}
+              >
+                {language === 'en' ? 'Certifications' : 'Certificaciones'}
               </button>
             </div>
           </div>
