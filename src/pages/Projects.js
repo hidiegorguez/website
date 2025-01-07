@@ -40,7 +40,7 @@ const Projects = ({ language }) => {
 
   return (
     <section className="projects">
-      <h2>{language === 'es' ? 'Proyectos' : 'Projects'}</h2>
+      <h2>{language === 'es' ? 'Proyectos principales' : 'Main Projects'}</h2>
       <div className="shared-section">
         {projects.map((project, index) => (
           <div

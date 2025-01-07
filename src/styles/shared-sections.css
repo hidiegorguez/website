@@ -85,6 +85,12 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
   }
   
+  .shared-item-short:hover {
+    background-color: #f0f0ff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
   /* Títulos */
   .shared-item h3 {
     display: flex;
