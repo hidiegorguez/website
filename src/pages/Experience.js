@@ -26,7 +26,7 @@ const Experience = ({ language }) => {
       link: 'https://www.arentia.com/nuestros-negocios/arentia-seguros/',
     },
     {
-      title: language === 'es' ? 'Becario en Transformación Digital' : 'Intern in Digital Transformation',
+      title: language === 'es' ? 'Becario en Transformación Digital' : 'Trainee in Digital Transformation',
       organization: 'EUIPO',
       date: 'Sep 2022 - Dec 2022',
       shortDescription: process.env.PUBLIC_URL + '/images/euipo.png',

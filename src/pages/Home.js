@@ -5,7 +5,7 @@ const Home = ({ language }) => {
   return (
     <section id="home" className="home">
       <div className="home-container">
-        <img src={process.env.PUBLIC_URL + '/images/home-welcome.png'} alt="Diego" className="home-photo" />
+        <img src={process.env.PUBLIC_URL + '/images/Profile.png'} alt="Diego" className="home-photo" />
         <div className="home-text">
           <h2>{language === 'es' ? 'Diego Rodríguez García' : 'Diego Rodríguez García'}</h2>
           <h3>{language === 'es' ? 'Matemático / Científico de Datos / Desarrollador Python' : 'Mathematician / Data Scientist / Python Developer'}</h3>

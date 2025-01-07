@@ -58,7 +58,7 @@ const Projects = ({ language }) => {
               <>
                 <p>{project.fullDescription}</p>
                 <a
-                  href={project.link}
+                  href={project.link} 
                   className="website-link"
                   target="_blank"
                   rel="noopener noreferrer"

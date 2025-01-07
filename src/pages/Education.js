@@ -31,8 +31,8 @@ const Education = ({ language }) => {
       date: 'Sep 2016 - Jun 2018',
       shortDescription: process.env.PUBLIC_URL + '/images/IESGPB.png',
       fullDescription: language === 'es'
-        ? 'ciencias y tecnología'
-        : 'science and technology',
+        ? 'Ciencias y Tecnología.'
+        : 'Science and Technology.',
       link: 'https://www.educa2.madrid.org/web/ies.gpb',
     },
   ];
