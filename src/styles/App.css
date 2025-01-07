@@ -115,7 +115,7 @@ footer {
 }
 
 /* Contenedores compartidos para proyectos, experiencia y educación */
-.projects, .experience, .education {
+.projects, .experience, .education, .certifications {
   padding: 2rem;
   color: #333;
   text-align: center;
@@ -159,12 +159,6 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* Fecha */
-.date {
-  font-style: italic;
-  color: #999;
-  margin-top: auto;
-}
 
 /* Enlace al sitio web */
 .website-link {
