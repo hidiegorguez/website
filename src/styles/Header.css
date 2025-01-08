@@ -1,6 +1,6 @@
 .header {
-  background-color: #686868; /* Fondo del header */
-  color: #ffffff; /* Color del texto */
+  background-color: #ffffff; /* Fondo del header */
+  color: #2e2e2e; /* Color del texto */
   padding: 1rem; /* Espaciado interno */
   display: flex;
   flex-direction: column; /* Organiza los elementos en columna */
@@ -14,7 +14,7 @@
   gap: 3rem; /* Espaciado entre los iconos */
   justify-content: center; /* Centra los iconos horizontalmente */
   align-items: center; /* Alinea los iconos verticalmente */
-  margin: 1rem 0; /* Margen superior e inferior */
+  margin: 2rem 0; /* Margen superior e inferior */
 }
 
 .header-icon {

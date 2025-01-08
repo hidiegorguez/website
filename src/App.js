@@ -36,12 +36,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header toggleLanguage={toggleLanguage} language={language} />
       <div className="layout">
         <div className="left-column">
           <Home language={language} />
         </div>
         <div className="right-column">
+        <Header toggleLanguage={toggleLanguage} language={language} />
           <div className="section-selector-container">
             <div className="section-selector">
               <button
@@ -79,7 +79,6 @@ function App() {
           {renderSection()}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -25,7 +25,9 @@ const Header = ({ toggleLanguage, language }) => {
   return (
     <header className="header">
       <div className="header-container">
-        <h1 className='name'>Diego Rodríguez García</h1>
+        <button className="language-button" onClick={toggleLanguage}>
+          {language === 'es' ? 'ES - Cambiar a inglés' : 'EN - Switch to Spanish'}
+        </button>
       <div className="icon-container">
         <div class="gmail-icon-container">
           <img
@@ -67,9 +69,6 @@ const Header = ({ toggleLanguage, language }) => {
           />
         </a>
       </div>
-        <button className="language-button" onClick={toggleLanguage}>
-          {language === 'es' ? 'ES - Cambiar a inglés' : 'EN - Switch to Spanish'}
-        </button>
       </div>
     </header>
   );
