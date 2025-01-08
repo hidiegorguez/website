@@ -25,7 +25,7 @@ const Header = ({ toggleLanguage, language }) => {
   return (
     <header className="header">
       <div className="header-container">
-        <h1>Diego Rodríguez García</h1>
+        <h1 className='name'>Diego Rodríguez García</h1>
       <div className="icon-container">
         <div class="gmail-icon-container">
           <img

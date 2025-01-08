@@ -51,8 +51,8 @@ const Education = ({ language }) => {
             className={`shared-item ${expandedIndex === index ? 'expanded' : ''}`}
             onClick={() => toggleExpand(index)}
           >
-            <h3>{edu.title}</h3>
-            <p className="institution">{edu.institution}</p>
+            <p className="shared-item-title">{edu.title}</p>
+            <p className="shared-item-subtitle">{edu.institution}</p>
             {expandedIndex !== index && (
               <img src={edu.shortDescription} alt={`${edu.title} thumbnail`} />
             )}

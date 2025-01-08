@@ -93,8 +93,7 @@ const Certifications = ({ language }) => {
             className={`shared-item-short ${expandedIndex === index ? 'expanded' : ''}`}
             onClick={() => toggleExpand(index)}
           >
-            <h4 className='certificate'>{edu.title}</h4>
-            <p className="date">{edu.date}</p>
+            <p className='shared-item-short-title'>{edu.title}</p>
             {expandedIndex !== index && (
               <img src={edu.shortDescription} alt={`${edu.title} thumbnail`} />
             )}
@@ -111,6 +110,7 @@ const Certifications = ({ language }) => {
                 </a>
               </>
             )}
+            <p className="date">{edu.date}</p>
           </div>
         ))}
       </div>

@@ -7,6 +7,7 @@ const SmallProjects = ({ language }) => {
   const SmallProjects = [
     {
       title: language === 'es' ? 'CIFAR-10' : 'CIFAR-10',
+      shortDescription: process.env.PUBLIC_URL + '/images/GithubText.png',
       fullDescription: language === 'es'
         ? 'Un enfoque de aprendizaje automático para la clasificación de imágenes utilizando el conjunto de datos CIFAR-10, que incluye imágenes en color de 32x32 píxeles en 10 categorías de objetos distintas.'
         : 'A machine learning approach to image classification using the CIFAR-10 dataset, which includes 32x32 pixel color images across 10 distinct object categories.',
@@ -14,6 +15,7 @@ const SmallProjects = ({ language }) => {
     },
     {
       title: language === 'es' ? 'Análisis educativo' : 'Educational analysis',
+      shortDescription: process.env.PUBLIC_URL + '/images/GithubText.png',
       fullDescription: language === 'es'
         ? 'Análisis educativo basado en las puntuaciones PISA'
         : 'Educational analysis with Machine Learning based on PISA scores',
@@ -21,6 +23,7 @@ const SmallProjects = ({ language }) => {
     },
     {
       title: language === 'es' ? 'Todolist' : 'Todolist',
+      shortDescription: process.env.PUBLIC_URL + '/images/GithubText.png',
       fullDescription: language === 'es'
         ? 'Una aplicación tan simple como moderna de tareas con React, Vite, y Express.'
         : 'A modern and simple To-do list application built with React, Vite, and Express.',
@@ -28,6 +31,7 @@ const SmallProjects = ({ language }) => {
     },
     {
       title: language === 'es' ? 'Detección de Malware en Microsoft' : 'Microsoft Malware Detection',
+      shortDescription: process.env.PUBLIC_URL + '/images/GithubText.png',
       fullDescription: language === 'es'
         ? 'Desarrollo de un modelo supervisado para predecir la probabilidad de obtención de virus en ordenadores de Windows'
         : 'Development of a supervised modeling project to predict the probability of infection of a Windows computer.',
@@ -35,6 +39,7 @@ const SmallProjects = ({ language }) => {
       },
     {
       title: language === 'es' ? 'Juego de carretera' : 'Road Game',
+      shortDescription: process.env.PUBLIC_URL + '/images/GithubText.png',
       fullDescription: language === 'es'
       ? 'Juego multijugador desarrollado con programación paralela y la librería pygame.'
       : 'Parallel programming 3 player game with pygame library.',
@@ -42,6 +47,7 @@ const SmallProjects = ({ language }) => {
     },
     {
       title: language === 'es' ? 'Predicción de retrasos aéreos' : 'Air delays forecast',
+      shortDescription: process.env.PUBLIC_URL + '/images/GithubText.png',
       fullDescription: language === 'es'
       ? 'Un cuaderno que pretende aprovechar el aprendizaje automático para predecir los retrasos de los vuelos en el aeropuerto JFK'
       : 'Notebook that aims to leverage machine learning to predict flight delays at JFK airport',
@@ -63,7 +69,10 @@ const SmallProjects = ({ language }) => {
             className={`shared-item-short ${expandedIndex === index ? 'expanded' : ''}`}
             onClick={() => toggleExpand(index)}
           >
-            <h4 className='smallproject'>{edu.title}</h4>
+            <p className='shared-item-short-title'>{edu.title}</p>
+            {expandedIndex !== index && (
+              <img src={edu.shortDescription} alt={`${edu.title} thumbnail`} />
+            )}
             {expandedIndex === index && (
               <>
                 <p className='share-description-short'>{edu.fullDescription}</p>

@@ -1,6 +1,6 @@
 .header {
   background-color: #686868; /* Fondo del header */
-  color: #fff; /* Color del texto */
+  color: #ffffff; /* Color del texto */
   padding: 1rem; /* Espaciado interno */
   display: flex;
   flex-direction: column; /* Organiza los elementos en columna */
@@ -11,15 +11,15 @@
 
 .icon-container {
   display: flex;
-  gap: 2rem; /* Espaciado entre los iconos */
+  gap: 3rem; /* Espaciado entre los iconos */
   justify-content: center; /* Centra los iconos horizontalmente */
   align-items: center; /* Alinea los iconos verticalmente */
   margin: 1rem 0; /* Margen superior e inferior */
 }
 
 .header-icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -71,9 +71,9 @@
 
 .language-button {
   padding: 0.5rem 1rem; /* Tamaño del botón */
-  font-size: 1rem; /* Tamaño de fuente */
+  font-size: 0.8rem; /* Tamaño de fuente */
   font-weight: bold; /* Fuente en negrita */
-  background-color: #363636; /* Color de fondo */
+  background-color: #3b5a12; /* Color de fondo */
   color: #fff; /* Color del texto */
   border: none;
   border-radius: 8px; /* Bordes redondeados */
@@ -82,7 +82,11 @@
 }
 
 .language-button:hover {
-  background-color: #cacaca; /* Color de hover */
+  background-color: #b1d38a; /* Color de hover */
   color: #333333; /* Color del texto */
   transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.name {
+  font-size: 2rem;
 }

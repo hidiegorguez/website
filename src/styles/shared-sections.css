@@ -1,149 +1,138 @@
 /* shared-sections.css */
 
-/* Contenedor principal */
-.shared-section {
-    display: grid; /* Diseña las celdas en formato cuadrícula */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste adaptable */
-    column-gap: 1.5rem; /* Espaciado entre celdas */
-    row-gap: 6rem; /* Espaciado entre celdas */
-    justify-content: center; /* Centrado horizontal */
-    padding: 2rem; /* Espaciado interno */
-  }
+/* Titles */
+.projects, .experience, .education, .certifications, .smallprojects {
+  padding: 2rem;
+  color: #333;
+  text-align: center;
+}
 
+/* Sections */
+.shared-section, .shared-section-short {
+  display: grid; 
+  row-gap: 4rem;
+  padding: 2rem;
+}
 .shared-section-short {
-    display: grid; /* Diseña las celdas en formato cuadrícula */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste adaptable */
-    column-gap: 0.3rem; /* Espaciado entre celdas */
-    justify-content: center; /* Centrado horizontal */
-    padding: 2rem; /* Espaciado interno */
-  }
-  
-  /* Tarjetas individuales */
-  .shared-item {
-    background-color: #fff; /* Fondo blanco */
-    border: 2px solid #e0e0e0; /* Borde gris claro */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    padding: 2rem; /* Espaciado interno */
-    padding-top: 1rem;
-    text-align: center; /* Centrado del texto */
-    cursor: pointer; /* Interactivo */
-    transition: all 0.3s ease; /* Suavidad en los cambios */
-    position: relative; /* Necesario para la posición de la fecha */
-    display: flex;
-    flex-direction: column; /* Coloca elementos en columna */
-    justify-content: flex-start;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  justify-content: center; 
+  row-gap: 4rem;
+  column-gap: 2rem;
+  padding: 2rem; 
+}
 
-  .shared-item-short {
-    max-width: 80%;
-    max-height: 60%;
-    background-color: #fff; /* Fondo blanco */
-    border: 2px solid #e0e0e0; /* Borde gris claro */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    padding: 0.5rem; /* Espaciado interno */
-    text-align: center; /* Centrado del texto */
-    align-items: center;
-    cursor: pointer; /* Interactivo */
-    transition: all 0.3s ease; /* Suavidad en los cambios */
-    position: relative; /* Necesario para la posición de la fecha */
-    display: flex;
-    flex-direction: column; /* Coloca elementos en columna */
-    justify-content: flex-start;
-  }
-  
-  /* Imagen de la tarjeta */
-  .shared-item img {
-    max-width: 80%; /* Imagen contenida */
-    max-height: 100px; /* Limita la altura máxima */
-    object-fit: contain; /* Ajuste proporcional */
-    padding: 10% 0; /* Espaciado interno vertical */
-    border-radius: 10px; /* Bordes redondeados */
-    margin: 0 auto; /* Centrado horizontal */
-  }
+/* Cards */
+.shared-item {
+  background-color: #fff; 
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  padding: 4%;
+  padding-top: 0%;
+  padding-bottom: 6%;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
 
-  .shared-item-short img {
-    max-width: 50%; /* Imagen contenida */
-    max-height: 50%; /* Limita la altura máxima */
-    object-fit: contain; /* Ajuste proporcional */
-    padding: 1rem 0; /* Espaciado interno vertical */
-    margin-bottom: 6rem ; 
-  }
-  
-  /* Fecha */
-  .date {
-    font-style: italic; /* Texto en cursiva */
-    color: #999; /* Color gris claro */
-    margin-top: auto; /* Empuja la fecha al fondo */
-  }
-  
-  /* Hover de la tarjeta */
-  .shared-item:hover {
-    background-color: #f0f0ff; /* Fondo azul claro */
-    transform: translateY(-5px); /* Eleva la tarjeta */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-  }
-  
-  .shared-item-short:hover {
-    background-color: #f0f0ff;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+.shared-item-short {
+  background-color: #fff; 
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  padding: 4%;
+  padding-top: 0%;
+  padding-bottom: 6%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-  /* Títulos */
-  .shared-item h3 {
-    display: flex;
-    align-items: center; /* Centrado vertical */
-    font-size: 1.5rem; /* Tamaño del título */
-    margin-bottom: 0.5rem; /* Espaciado inferior */
-    min-height: 20%;
-  }
-  
-  /* Organización o institución */
-  .organization, .institution {
-    font-weight: bold; /* Negrita */
-    font-size: 1.2rem; /* Tamaño del texto */
-    margin-bottom: 0.5rem; /* Espaciado inferior */
-    min-height: 8%;
-  }
+/* Item Hover */
+.shared-item:hover, .shared-item-short:hover {
+  background-color: #f0eed9;
+  transform: translateY(-2%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-  .certificate {
-    display: flex;
-    align-items: center; /* Centrado vertical */
-    font-weight: bold; /* Negrita */
-    font-size: 1rem; /* Tamaño del texto */
-    min-height: 30%;
-    margin-bottom: 0.5rem; /* Espaciado inferior */
-  }
-  
-  .share-description-short {
-    font-size: 0.9rem; /* Tamaño del texto */
-  }
+/* Titles */
+.shared-item-title {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  min-height: 20%;
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+}
+.shared-item-short-title {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  min-height: 32%;
+  font-size: 1.2rem;
+  margin-bottom: 5%;
+}
+.shared-item-subtitle{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5%;
+  min-height: 8%;
+}
 
-  /* Enlace */
-  .website-link {
-    min-height: 10rem;
-    display: inline-block;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    color: #007bff; /* Azul */
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Negrita */
-    transition: all 0.3s ease; /* Suavidad */
-  }
+/* Icons */
+.shared-item img {
+  max-width: 80%;
+  max-height: 30%; 
+  padding: 5% 0;
+}
+.shared-item-short img {
+  max-width: 70%;
+  max-height: 50%;
+  padding: 10% 0;
+}
 
-  .website-link-short {
-    margin-bottom: 13rem;
-    margin-top: auto; /* Empuja la fecha al fondo */
-    display: inline-block;
-    color: #007bff; /* Azul */
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Negrita */
-    transition: all 0.3s ease; /* Suavidad */
-  }
-  
-  .website-link:hover {
-    color: #0056b3; /* Azul más oscuro */
-  }
-  
+/* Description */
+.share-description- {
+  font-size: 1rem;
+}
+.share-description-short {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem; 
+}
+
+/* Link */
+.website-link {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  /* Doubting */
+  margin-bottom: 10%;
+  margin-top: 4%;
+}
+.website-link-short {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  /* Doubting */
+  margin-bottom: 10%;
+  margin-top: 4%;
+}
+.website-link-short:hover, .website-link:hover {
+  color: #0050a7;
+}
+
+/* Date */
+.date {
+  font-style: italic; 
+  color: #999;
+  margin-top: auto;
+}

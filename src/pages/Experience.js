@@ -51,8 +51,8 @@ const Experience = ({ language }) => {
             className={`shared-item ${expandedIndex === index ? 'expanded' : ''}`}
             onClick={() => toggleExpand(index)}
           >
-            <h3>{exp.title}</h3>
-            <p className="organization">{exp.organization}</p>
+            <p className="shared-item-title">{exp.title}</p>
+            <p className="shared-item-subtitle">{exp.organization}</p>
             {expandedIndex !== index && (
               <img src={exp.shortDescription} alt={`${exp.title} thumbnail`} />
             )}
