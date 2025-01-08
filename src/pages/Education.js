@@ -56,7 +56,6 @@ const Education = ({ language }) => {
             {expandedIndex !== index && (
               <img src={edu.shortDescription} alt={`${edu.title} thumbnail`} />
             )}
-            <p className="date">{edu.date}</p>
             {expandedIndex === index && (
               <>
                 <p>{edu.fullDescription}</p>
@@ -70,6 +69,7 @@ const Education = ({ language }) => {
                 </a>
               </>
             )}
+            <p className="date">{edu.date}</p>
           </div>
         ))}
       </div>

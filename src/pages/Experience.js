@@ -56,7 +56,6 @@ const Experience = ({ language }) => {
             {expandedIndex !== index && (
               <img src={exp.shortDescription} alt={`${exp.title} thumbnail`} />
             )}
-            <p className="date">{exp.date}</p>
             {expandedIndex === index && (
               <>
                 <p>{exp.fullDescription}</p>
@@ -70,6 +69,7 @@ const Experience = ({ language }) => {
                 </a>
               </>
             )}
+            <p className="date">{exp.date}</p>
           </div>
         ))}
       </div>

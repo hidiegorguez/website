@@ -18,7 +18,7 @@ const Projects = ({ language }) => {
       title: language === 'es' ? 'Clasificación de Animales' : 'Animal Classification',
       shortDescription: process.env.PUBLIC_URL + '/images/Tensorflow.png',
       fullDescription: language === 'es'
-        ? 'Un sistema de aprendizaje profundo desarrollado con TensorFlow para clasificar imágenes de animales. Incluye técnicas de aprendizaje por transferencia y una aplicación Flask para cargar imágenes y obtener predicciones en tiempo real.'
+        ? ''
         : 'A deep learning system developed with TensorFlow to classify animal images. It features transfer learning techniques and a Flask app to upload images and get real-time predictions.',
       link: 'https://github.com/hidiegorguez/Animal-Classification-App'
     },
