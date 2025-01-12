@@ -45,31 +45,31 @@ function App() {
           <div className="section-selector-container">
             <div className="section-selector">
               <button
-                className={activeSection === 'experience' ? 'active' : ''}
+                className={activeSection === 'experience' ? 'active' : 'unactive'}
                 onClick={() => setActiveSection('experience')}
               >
                 {language === 'en' ? 'Experience' : 'Experiencia'}
               </button>
               <button
-                className={activeSection === 'projects' ? 'active' : ''}
+                className={activeSection === 'projects' ? 'active' : 'unactive'}
                 onClick={() => setActiveSection('projects')}
               >
                 {language === 'en' ? 'Projects' : 'Proyectos'}
               </button>
               <button
-                className={activeSection === 'education' ? 'active' : ''}
+                className={activeSection === 'education' ? 'active' : 'unactive'}
                 onClick={() => setActiveSection('education')}
               >
                 {language === 'en' ? 'Education' : 'Educación'}
               </button>
               <button
-                className={activeSection === 'certifications' ? 'active' : ''}
+                className={activeSection === 'certifications' ? 'active' : 'unactive'}
                 onClick={() => setActiveSection('certifications')}
               >
                 {language === 'en' ? 'Certifications' : 'Certificaciones'}
               </button>
               <button
-                className={activeSection === 'smallprojects' ? 'active' : ''}
+                className={activeSection === 'smallprojects' ? 'active' : 'unactive'}
                 onClick={() => setActiveSection('smallprojects')}
               >
                 {language === 'en' ? 'Secondary projects' : 'Proyectos secundarios'}
