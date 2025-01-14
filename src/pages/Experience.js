@@ -11,8 +11,8 @@ const Experience = ({ language }) => {
       date: 'Oct 2023 - Present',
       shortDescription: process.env.PUBLIC_URL + '/images/PublicisGroupe.png',
       fullDescription: language === 'es'
-        ? 'Optimización de campañas publicitarias en Google Ads y plataformas programáticas utilizando tecnologías de Microsoft (Azure, Databricks).'
-        : 'Optimization of advertising campaigns on Google Ads and programmatic platforms using Microsoft technologies (Azure, Databricks).',
+        ? 'Optimización de campañas publicitarias en Google Ads y distintas plataformas programáticas utilizando tecnologías de Microsoft (Visual Studio, SSMS, Azure, Databricks, Azure DevOps), con variedad de lenguajes de programación (C#, Python, JavaScript), abarcando prácticas de integración y entrega continua (CI/CD), inteligencia artificial, desarrollo web, minería y análisis de datos.'
+        : 'Optimization of advertising campaigns on Google Ads and various programmatic platforms using Microsoft technologies (Visual Studio, SSMS, Azure, Databricks, Azure DevOps), with a variety of programming languages (C#, Python, JavaScript), encompassing continuos integration and delivery (CI/CD) practices, artificial intelligence, web development, data mining and data analysis.',
         link: 'https://www.publicisgroupe.com/fr/splash',
     },
     {
