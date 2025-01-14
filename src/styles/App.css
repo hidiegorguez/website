@@ -1,78 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1, h2, h3 {
-  font-weight: 700; /* Negrita para los títulos */
-}
-
-p {
-  font-weight: 400; /* Normal para los párrafos */
-}
-
-/* Layout general para mantener el footer en la parte inferior */
 body, html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80%;
   height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
+body {
+  font-size: 1rem;
+}
+
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asegura que tome toda la pantalla */
+  min-height: 100vh;
 }
 
-footer {
-  margin-top: auto; /* Empuja el footer al fondo */
-}
-/* Layout principal de la aplicación */
 .layout {
-  display: flex; /* Diseño en fila para las columnas izquierda y derecha */
+  display: flex;
   flex: 1;
   flex-direction: row;
-  gap: 2rem; /* Espacio entre columnas */
-  padding: 2rem; /* Espaciado general */
+  gap: 2rem; 
+  padding: 2rem; 
 }
 
-/* Columna izquierda (bienvenida) */
 .left-column {
-  flex: 1; /* Toma menos espacio */
-  background-color: #ffffff; /* Fondo claro */
-  padding: 2rem; /* Espaciado interno */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1); /* Sombra */
+  max-width: 30%;
+  background-color: #ffffff; 
+  padding: 2rem;
+  border-radius: 8px; 
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1); 
 }
 
-/* Columna derecha (contenido dinámico) */
 .right-column {
-  flex: 2; /* Toma más espacio */
-  background-color: #ffffff; /* Fondo blanco */
+  min-width: 65%;
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1); /* Sombra */
-}
-
-/* Botones del selector de secciones */
-.section-selector-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem; /* Espaciado inferior para separación */
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
 }
 
 .section-selector {
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Espacio entre botones */
+  gap: 1rem;
 }
 
 .section-selector button {
   padding: 0.7rem 1.2rem;
   border: none;
-  border-radius: 8px; /* Bordes redondeados de los botones */
+  border-radius: 8px;
   font-size: 1rem;
   font-family: 'Arial', sans-serif;
   font-weight: 500;
