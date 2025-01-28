@@ -6,6 +6,15 @@ const Certifications = ({ language }) => {
 
   const Certifications = [
     {
+      title: language === 'es' ? 'Inteligencia Artifical y Deep Learning' : 'Artificial Intelligence and Deep Learning',
+      date: language === 'es' ? 'Ene 2025': 'Jan 2025',
+      shortDescription: process.env.PUBLIC_URL + '/images/Udemy.png',
+      fullDescription: language === 'es'
+        ? ''
+        : '',
+        link: `https://www.udemy.com/certificate/UC-19d4a2f1-487a-4e6f-91b6-0bf5dd88e25f/`,
+    },
+    {
       title: language === 'es' ? 'Stroytelling con Análisis de Datos' : 'Storytelling through analytics',
       date: language === 'es' ? 'May 2024 ': 'May 2024',
       shortDescription: process.env.PUBLIC_URL + '/images/Nuclio.png',
